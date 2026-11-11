@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raizie – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#top">Raizie Delos Santos</a>
+    <nav aria-label="Main">
+      <ul id="navList">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="icon-btn" id="themeBtn" aria-label="Switch color theme">☾</button></li>
+      </ul>
+    </nav>
+    <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navList">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1 id="typed">I enjoy coding and other stuff</h1>
+      <p class="lead">I’m Raizie, a UIC Student. This portfolio presents my skills.</p>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>About me</h2>
+        <p>I’m a first-year student who enjoys coding.</p>
+      </div>
+      <div>
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>Playing video games</span><span>Swimming</span><span>Cycling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <h2>Contact</h2>
+      <p>Have a project or an opportunity in mind? Send me a message.</p>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name">
+        <p class="err" id="nameErr"></p>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <p class="err" id="emailErr"></p>
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg"></textarea>
+        <p class="err" id="msgErr"></p>
+        <button class="btn primary" type="submit">Send message</button>
+        <p id="status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Alex Rivera. Built with HTML, CSS, and JavaScript.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
